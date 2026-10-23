@@ -683,6 +683,114 @@ footer .foot-addr b{display:block;color:#fff;font-size:13px;letter-spacing:.1em;
 /* Header logo */
 .brand-logo{display:block;height:72px;width:auto;background:#fff;border-radius:14px;padding:6px 16px}
 @media (max-width:640px){.brand-logo{height:56px;padding:5px 12px}}
+
+/* ==========================================================================
+   Results dashboard
+   ========================================================================== */
+.quiz-card.wide{max-width:1080px}
+.res-next{margin-top:12px;font-size:17px;color:var(--ink)}
+.res-sec{padding:36px;border-top:1px solid var(--line)}
+.res-sec>h3{font-size:clamp(22px,2.4vw,28px);line-height:1.2;color:var(--ink);letter-spacing:-.01em}
+.res-intro{margin-top:10px;color:var(--ink-2);font-size:16.5px;max-width:760px}
+.res-sec h4{font-size:17px;color:var(--ink);margin:0}
+.res-sec h4.sub{margin:30px 0 14px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sub-strong{color:#3F7D0C!important}.sub-mid{color:#9A6200!important}.sub-low{color:#B23A1E!important}
+.muted{color:var(--muted)}
+.fine{margin-top:22px;font-size:13px;color:var(--muted)}
+/* scale */
+.scale{position:relative;margin-top:44px;padding-bottom:6px}
+.scale-track{display:flex;gap:4px}
+.scale-seg{padding:14px 12px;border-radius:10px;background:var(--bg-soft);border:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:0}
+.scale-seg b{font-size:15px;color:var(--ink)}.scale-seg span{font-size:13px;color:var(--muted)}
+.seg-0{background:#FDF0D6}.seg-1{background:#E4F0F4}.seg-2{background:#E8F4D2}.seg-3{background:#CFE9B0}
+.scale-seg.on{outline:3px solid var(--forest-2);outline-offset:2px}
+.scale-marker{position:absolute;top:-34px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center}
+.scale-marker span{background:var(--forest-2);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.scale-marker::after{content:"";width:0;height:0;border:7px solid transparent;border-top-color:var(--forest-2);margin-top:-1px}
+/* charts */
+.pie-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:22px}
+.chart-card{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff;margin-top:0}
+.chart-card h4{margin-bottom:14px}
+.pie{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.pie-svg{width:176px;height:176px;flex:none}
+.pie-big{font:700 30px var(--sans);fill:#0C1F14}.pie-small{font:600 11px var(--sans);fill:#5A6B5F;letter-spacing:.1em;text-transform:uppercase}
+.pie-legend{list-style:none;margin:0;padding:0;display:grid;gap:9px;flex:1 1 150px;min-width:0}
+.pie-legend li{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:9px;align-items:center;font-size:14.5px;color:var(--ink-2)}
+.pie-legend i{width:14px;height:14px;border-radius:4px}
+.pie-legend b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:14px}
+.res-sec .cats{padding:26px 0 0;border:0;margin-top:8px}
+.cats .cat-row{grid-template-columns:minmax(0,230px) minmax(0,1fr) 48px 96px}
+.cat-fill.fill-strong{background:#3F7D0C}.cat-fill.fill-mid{background:#F2A93B}.cat-fill.fill-low{background:#D1553B}
+.chip{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px;text-align:center}
+.chip-strong{background:#E3F2E6;color:#1F5B2B}.chip-mid{background:#FDF0D6;color:#7A4B00}.chip-low{background:#FDECE4;color:#8A2E0B}
+/* band cards */
+.band-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
+.band-card{border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;position:relative;background:#fff}
+.band-card h4{font-size:18px}.band-card p{font-size:15px;color:var(--ink-2)}
+.band-card.on{border:2px solid var(--forest-2);background:#F7FBEF}
+.band-card em{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--forest-2)}
+.band-card .band-chip{align-self:flex-start;margin:0}
+/* analysis */
+.insights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.insight{border-radius:14px;padding:18px 20px;border:1px solid var(--line)}
+.insight p{margin-top:6px;font-size:15.5px;color:var(--ink-2)}
+.insight.good{background:#EAF5E0;border-color:#C7DBA8}.insight.warn{background:#FDF3E1;border-color:#F0D49A}
+.gaps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.gap{border:1px solid var(--line);border-left:5px solid var(--lime-dark);border-radius:12px;padding:16px 18px;background:#fff}
+.gap-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.gap-cat{font-size:13px;color:var(--muted);font-weight:600}
+.gap-q{margin-top:8px;font-weight:600;color:var(--ink);font-size:16px}
+.gap-tip{margin-top:6px;color:var(--ink-2);font-size:15px}
+.gap-sdg{display:flex;gap:6px;margin-top:10px}
+.sdg-img{display:block;border-radius:4px}
+.sdg-mini{border-radius:3px}
+/* SDG cards */
+.sdg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sdg-card{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;align-items:flex-start}
+.sdg-big{flex:none;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.sdg-body{min-width:0;flex:1}
+.sdg-body h5{font-size:16px;line-height:1.3;margin:0;color:var(--ink)}
+.sdg-body p{margin-top:8px;font-size:14.5px;color:var(--ink-2)}
+.sdg-prog{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;margin-top:10px}
+.sdg-prog b{font-size:14px;color:var(--ink);font-variant-numeric:tabular-nums}
+.sdg-up{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line-strong)}
+.sdg-up>span{font-size:12.5px;color:var(--muted);font-weight:600}
+.sdg-up-icons{display:flex;gap:6px;margin-top:6px}
+/* reassessment */
+.cmp{margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}
+.cmp-big{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14.5px;color:var(--muted)}
+.cmp-big b{font-size:34px;color:var(--ink);font-family:var(--serif)}
+.cmp-big i{font-style:normal;font-size:24px;color:var(--muted)}
+.delta{font-style:normal;font-weight:700;font-size:13.5px;padding:3px 10px;border-radius:999px;background:var(--bg-soft);color:var(--muted)}
+.delta.up{background:#E3F2E6;color:#1F5B2B}.delta.down{background:#FDECE4;color:#8A2E0B}
+.cmp-rows{margin-top:16px;display:grid;gap:0}
+.cmp-row{display:grid;grid-template-columns:minmax(0,1fr) 70px 70px 70px;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:15.5px}
+.cmp-row .delta{justify-self:start}
+.baseline{margin-top:16px;padding:16px 18px;border-radius:12px;background:var(--bg-soft);color:var(--ink-2)}
+.s7 .chart-card,.res-sec .chart-card+.res-intro{margin-top:16px}
+.res-sec>.chart-card{margin-top:18px}
+.trend-svg{width:100%;height:auto;display:block}
+.tr-ax{font:600 11px var(--sans);fill:#5A6B5F}.tr-val{font:700 12px var(--sans);fill:#0C1F14}
+.res-actions.inline{padding:16px 0 0}
+@media (max-width:960px){
+  .band-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sdg-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:700px){
+  .res-sec{padding:28px 20px}
+  .pie-grid,.insights{grid-template-columns:minmax(0,1fr)}
+  .scale-track{flex-direction:column}.scale-seg{flex-basis:auto!important;flex-direction:row;justify-content:space-between;align-items:center}
+  .scale-marker{display:none}
+  .cats .cat-row{grid-template-columns:minmax(0,1fr) 44px}
+  .cats .cat-row .chip{grid-column:1 / -1;justify-self:start}
+  .band-grid{grid-template-columns:minmax(0,1fr)}
+  .cmp-row{grid-template-columns:minmax(0,1fr) 54px 54px 54px;font-size:14px}
+}
+@media print{
+  .res-sec,.sdg-card,.gap,.chart-card,.band-card{break-inside:avoid}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .res-actions.inline{display:none!important}
+}
 </style>
 </head>
 <body>
@@ -690,7 +798,7 @@ footer .foot-addr b{display:block;color:#fff;font-size:13px;letter-spacing:.1em;
 <div class="utility">
   <div class="wrap">
     <span>Climate advisory and digital tools</span>
-    <span>Canada · USA · UK · UAE · Norway · India</span>
+    <span>Canada · USA · UAE · Norway · India</span>
   </div>
 </div>
 
@@ -718,7 +826,7 @@ footer .foot-addr b{display:block;color:#fff;font-size:13px;letter-spacing:.1em;
       <div>
         <div class="eyebrow">Self-assessment</div>
         <h1>How does your organization measure up?</h1>
-        <p class="lede">Answer <span data-qcount>20</span> short questions to see where your organization stands today and where to focus next. Your results appear on screen as soon as you finish.</p>
+        <p class="lede">Answer <span data-qcount>20</span> short questions on governance, performance, climate risk and staff engagement. You will get a score, charts, a plain-language analysis, your alignment with the UN Sustainable Development Goals, and a way to track progress when you reassess.</p>
         <div class="hero-cta"><a class="btn btn-primary" href="#start">Start the assessment</a></div>
       </div>
       <ul class="facts">
@@ -758,7 +866,6 @@ footer .foot-addr b{display:block;color:#fff;font-size:13px;letter-spacing:.1em;
 
 <footer>
   <div class="wrap">
-    <div>Mu Gamma Consultants International (MGI Canada). Incorporated in British Columbia.</div>
     <div class="foot-links"><a href="index.html#book">Book a meeting</a><a href="index.html#contact">Contact</a><a href="index.html">Home</a></div>
     <div>© 2026 Mu Gamma Canada. All rights reserved.</div>
   </div>
@@ -767,71 +874,82 @@ footer .foot-addr b{display:block;color:#fff;font-size:13px;letter-spacing:.1em;
 <script>
 (function(){
 /* =====================================================================
-   EDIT THE QUESTIONS HERE. Replace each [QUESTION n ...] with your text.
-   "cat" is the section name used in the results breakdown.
-   Use the same cat name for questions that belong together.
-   You can add or remove questions; everything else updates by itself.
+   EDIT THE QUESTIONS HERE.
+   cat = section name, text = question, tip = advice shown if the answer
+   is not "Yes", sdg = UN Sustainable Development Goals the question
+   supports, na:true = also offer a "Not applicable" answer.
    ===================================================================== */
+var G='Governance',P='Sustainability performance',R='Climate risk and resilience',L='Leadership and staff education';
 var QUESTIONS=[
-  {cat:'Section A', text:'[QUESTION 1: replace with your question]'},
-  {cat:'Section A', text:'[QUESTION 2: replace with your question]'},
-  {cat:'Section A', text:'[QUESTION 3: replace with your question]'},
-  {cat:'Section A', text:'[QUESTION 4: replace with your question]'},
-  {cat:'Section A', text:'[QUESTION 5: replace with your question]'},
-  {cat:'Section B', text:'[QUESTION 6: replace with your question]'},
-  {cat:'Section B', text:'[QUESTION 7: replace with your question]'},
-  {cat:'Section B', text:'[QUESTION 8: replace with your question]'},
-  {cat:'Section B', text:'[QUESTION 9: replace with your question]'},
-  {cat:'Section B', text:'[QUESTION 10: replace with your question]'},
-  {cat:'Section C', text:'[QUESTION 11: replace with your question]'},
-  {cat:'Section C', text:'[QUESTION 12: replace with your question]'},
-  {cat:'Section C', text:'[QUESTION 13: replace with your question]'},
-  {cat:'Section C', text:'[QUESTION 14: replace with your question]'},
-  {cat:'Section C', text:'[QUESTION 15: replace with your question]'},
-  {cat:'Section D', text:'[QUESTION 16: replace with your question]'},
-  {cat:'Section D', text:'[QUESTION 17: replace with your question]'},
-  {cat:'Section D', text:'[QUESTION 18: replace with your question]'},
-  {cat:'Section D', text:'[QUESTION 19: replace with your question]'},
-  {cat:'Section D', text:'[QUESTION 20: replace with your question]'},
+  {cat:G,text:'Does your senior leadership understand how sustainability and climate change affect the business?',sdg:[13,12],tip:'Brief your leadership team on how climate and sustainability affect your costs, customers and risks. A one-hour session is a good start.'},
+  {cat:G,text:'Do your senior leaders view sustainability as essential to the business, not optional?',sdg:[12,8],tip:'Add sustainability to your strategic plan and leadership agenda so it is treated as part of core business.'},
+  {cat:G,text:'Have clear roles and responsibilities been assigned for managing sustainability issues?',sdg:[16,12],tip:'Name an owner for sustainability and write the roles into job descriptions and team plans.'},
+  {cat:G,text:'Are sustainability considerations built into your policies, practices, and systems?',sdg:[16,12],tip:'Build sustainability into procurement, HR, operations and finance policies rather than relying on one stand-alone policy.'},
+  {cat:G,text:'Is executive or leadership compensation tied to sustainability performance?',sdg:[8,16],tip:'Link a share of leadership incentives to a few measurable sustainability targets.'},
+  {cat:G,text:'Do you know which sustainability issues matter most to your business?',sdg:[12,17],tip:'Run a simple materiality assessment. Ask customers, staff, lenders and regulators which issues matter most.'},
+  {cat:P,text:'Have you established a baseline carbon footprint for your operations including Scope 1 and 2?',sdg:[13,7],tip:'Measure Scope 1 and 2 emissions for a base year using fuel records and electricity and gas bills.'},
+  {cat:P,text:'Have you measured your Scope 3 value chain emissions?',sdg:[13,12,17],tip:'Start with your largest Scope 3 categories, usually purchased goods and services, travel and transport.'},
+  {cat:P,text:'Have you set a greenhouse gas reduction target?',sdg:[13],tip:'Set a measurable target, such as a percentage cut by a set year, against your baseline.'},
+  {cat:P,text:'Have you taken action to reduce GHG emissions or your electricity and natural gas use?',sdg:[7,13],tip:'Begin with low-cost actions: an energy audit, efficient lighting, heating and cooling upgrades, and staff habits.'},
+  {cat:P,text:'Do you track your hazardous and non-hazardous waste generation?',sdg:[12,11],tip:'Keep a log of waste by type and hazard class, using hauler invoices and manifests.'},
+  {cat:P,text:'Do you monitor your water use?',sdg:[6,12],tip:'Read water meters every month and look for leaks and high-use processes.'},
+  {cat:P,text:'Do you track your business travel?',sdg:[13,11],tip:'Record business travel by mode and distance, and set simple rules that favour lower-carbon options.'},
+  {cat:P,text:'Do you have a sustainable procurement policy in place?',sdg:[12,8],tip:'Adopt a procurement policy that asks suppliers for environmental and social information.'},
+  {cat:P,text:'If you operate a fleet, are your vehicles hybrid or electric?',sdg:[11,13,7],na:true,tip:'Plan fleet replacement toward hybrid or electric vehicles and check available purchase incentives.'},
+  {cat:R,text:'Have you assessed how extreme weather and climate change could affect your operations or supply chain?',sdg:[13,9],tip:'Map the physical hazards (flood, heat, wildfire, storms) that could affect your sites and key suppliers.'},
+  {cat:R,text:'Does your business continuity plan account for extreme weather and climate risks?',sdg:[9,11,13],tip:'Add extreme-weather scenarios to your business continuity plan and test them once a year.'},
+  {cat:R,text:'Have you taken steps to reduce climate-related risks to your operations?',sdg:[13,9,11],tip:'Prioritise practical measures such as backup power, flood protection, supplier diversification and an insurance review.'},
+  {cat:R,text:'Are you required to disclose climate risks to the public, a lender, or a customer?',sdg:[13,16,17],na:true,tip:'Find out which lenders, customers or regulations expect climate disclosure and prepare a simple climate-risk statement.'},
+  {cat:L,text:'Do you regularly educate and engage employees on sustainability initiatives?',sdg:[4,13],tip:'Hold regular staff briefings and training, and set up a small green team so sustainability reaches every role.'}
 ];
 
-/* Answer choices. Change the labels or values if you prefer, for example
-   Yes / Partly / No with values 2 / 1 / 0. */
 var SCALE=[
-  {value:1,label:'Strongly disagree'},
-  {value:2,label:'Disagree'},
-  {value:3,label:'Neutral'},
-  {value:4,label:'Agree'},
-  {value:5,label:'Strongly agree'}
+  {value:2,label:'Yes'},
+  {value:1,label:'Partly or in progress'},
+  {value:0,label:'No'},
+  {value:'na',label:'Not applicable'}
 ];
 
-/* Result levels. "min" is the lowest overall percentage for each level. */
 var BANDS=[
-  {min:0, label:'Getting started',text:'Your answers point to plenty of room to build strong foundations. A short conversation with our team can help you choose the first practical steps.'},
-  {min:40,label:'Developing',     text:'You have some good practices in place and there are clear gaps to close. Focusing on a few priority areas can move you forward quickly.'},
-  {min:60,label:'Established',    text:'Your organization has solid practices in most areas. Targeted improvements and better documentation can strengthen your position further.'},
-  {min:80,label:'Advanced',       text:'Your answers show mature, well-managed practices. The next step is to keep improving, measure your results, and share your progress with stakeholders.'}
+  {min:0, label:'Getting started',text:'Your answers point to plenty of room to build strong foundations. A short conversation with our team can help you choose the first practical steps.',next:'Name an owner, measure your baseline emissions, and pick two or three quick wins.'},
+  {min:40,label:'Developing',     text:'You have some good practices in place and there are clear gaps to close. Focusing on a few priority areas can move you forward quickly.',next:'Close the gaps flagged below, set a reduction target, and document your policies.'},
+  {min:60,label:'Established',    text:'Your organization has solid practices in most areas. Targeted improvements and better documentation can strengthen your position further.',next:'Extend measurement to Scope 3, test your climate resilience plan, and report progress.'},
+  {min:80,label:'Advanced',       text:'Your answers show mature, well-managed practices. The next step is to keep improving, measure your results, and share your progress with stakeholders.',next:'Verify your data, report publicly, and engage suppliers and partners on shared targets.'}
 ];
+
+var SDG_INFO={
+  4:{n:'Quality Education',next:'Build staff skills with regular sustainability training and engagement.',up:[8,13]},
+  6:{n:'Clean Water and Sanitation',next:'Meter your water, fix leaks and set a water-reduction target.',up:[3,14,15]},
+  7:{n:'Affordable and Clean Energy',next:'Cut energy use first, then move toward cleaner electricity.',up:[9,13]},
+  8:{n:'Decent Work and Economic Growth',next:'Link leadership incentives and responsible procurement to sustainability results.',up:[9,10]},
+  9:{n:'Industry, Innovation and Infrastructure',next:'Build climate resilience into facilities, supply chains and continuity plans.',up:[11,13]},
+  11:{n:'Sustainable Cities and Communities',next:'Reduce waste, travel and fleet emissions, and plan for local hazards.',up:[3,13]},
+  12:{n:'Responsible Consumption and Production',next:'Track waste, set procurement criteria and focus on your material issues.',up:[8,13,14]},
+  13:{n:'Climate Action',next:'Measure, set targets and reduce emissions, and assess climate risks.',up:[7,11,15]},
+  16:{n:'Peace, Justice and Strong Institutions',next:'Assign clear roles, strengthen policies and be transparent in disclosure.',up:[17,5]},
+  17:{n:'Partnerships for the Goals',next:'Engage suppliers and stakeholders, and share your progress openly.',up:[13,16]}
+};
+function sdgName(n){return SDG_INFO[n]?SDG_INFO[n].n:({1:'No Poverty',2:'Zero Hunger',3:'Good Health and Well-being',5:'Gender Equality',10:'Reduced Inequalities',14:'Life Below Water',15:'Life on Land'})[n];}
 /* ===================================================================== */
 
 /* PURE:START */
-function scoreAnswers(answers,questions,scale){
-  var vals=scale.map(function(s){return s.value;});
-  var minV=Math.min.apply(null,vals),maxV=Math.max.apply(null,vals);
-  var total=0,cats={},order=[];
+function scoreAnswers(answers,questions){
+  var got=0,max=0,counts={yes:0,partly:0,no:0,na:0},cats={},order=[],sdg={};
   questions.forEach(function(q,i){
     var v=answers[i];
-    if(v==null){v=minV;}
-    total+=v-minV;
     var c=q.cat||'';
     if(!cats[c]){cats[c]={name:c,got:0,max:0};order.push(c);}
-    cats[c].got+=v-minV;
-    cats[c].max+=maxV-minV;
+    if(v==='na'){counts.na++;return;}
+    if(v==null){v=0;}
+    got+=v;max+=2;cats[c].got+=v;cats[c].max+=2;
+    if(v===2){counts.yes++;}else if(v===1){counts.partly++;}else{counts.no++;}
+    (q.sdg||[]).forEach(function(n){if(!sdg[n]){sdg[n]={n:n,got:0,max:0};}sdg[n].got+=v;sdg[n].max+=2;});
   });
-  var max=questions.length*(maxV-minV);
+  function pc(a,b){return b?Math.round(a/b*100):0;}
   return {
-    pct:max?Math.round(total/max*100):0,
-    cats:order.map(function(c){var o=cats[c];return {name:o.name,pct:o.max?Math.round(o.got/o.max*100):0};})
+    got:got,max:max,pct:pc(got,max),counts:counts,
+    cats:order.map(function(c){var o=cats[c];return {name:o.name,got:o.got,max:o.max,pct:pc(o.got,o.max)};}),
+    sdg:Object.keys(sdg).map(function(k){var o=sdg[k];return {n:o.n,pct:pc(o.got,o.max)};}).sort(function(a,b){return a.n-b.n;})
   };
 }
 function bandIndex(pct,bands){
@@ -842,7 +960,7 @@ function bandIndex(pct,bands){
 /* PURE:END */
 
 var N=QUESTIONS.length;
-var KEY='mgi-assessment-v1';
+var KEY='mgi-assessment-v2';
 var answers=[],idx=0;
 var $=function(id){return document.getElementById(id);};
 function el(tag,cls,text){var e=document.createElement(tag);if(cls){e.className=cls;}if(text!=null){e.textContent=text;}return e;}
@@ -875,6 +993,7 @@ function renderQ(focusHeading){
   var box=$('opts');
   box.innerHTML='';
   SCALE.forEach(function(s){
+    if(s.value==='na'&&!q.na){return;}
     var lab=el('label','opt');
     var inp=document.createElement('input');
     inp.type='radio';
@@ -904,12 +1023,104 @@ function svgEl(name,attrs){
   return e;
 }
 
+function status(p){return p>=67?{k:'strong',t:'Strong'}:(p>=34?{k:'mid',t:'Developing'}:{k:'low',t:'Priority'});}
+function sdgImg(n,size,cls){
+  var i=document.createElement('img');
+  i.src='sdg/goal-'+n+'.svg';i.width=size;i.height=size;
+  i.alt='UN SDG '+n+': '+sdgName(n);i.title='SDG '+n+': '+sdgName(n);
+  i.className=cls||'sdg-img';
+  return i;
+}
+function polar(cx,cy,r,a){return [cx+r*Math.cos(a),cy+r*Math.sin(a)];}
+function pieChart(slices,label,centre){
+  var total=slices.reduce(function(s,x){return s+x.value;},0);
+  var S=200,c=100,r=92;
+  var svg=svgEl('svg',{viewBox:'0 0 '+S+' '+S,role:'img','aria-label':label,'class':'pie-svg'});
+  if(!total){svg.appendChild(svgEl('circle',{cx:c,cy:c,r:r,fill:'#E4EBDD'}));}
+  else{
+    var a0=-Math.PI/2;
+    var live=slices.filter(function(s){return s.value>0;});
+    live.forEach(function(s){
+      if(live.length===1){svg.appendChild(svgEl('circle',{cx:c,cy:c,r:r,fill:s.color}));return;}
+      var a1=a0+s.value/total*Math.PI*2;
+      var p0=polar(c,c,r,a0),p1=polar(c,c,r,a1);
+      svg.appendChild(svgEl('path',{d:'M'+c+' '+c+' L'+p0[0].toFixed(2)+' '+p0[1].toFixed(2)+' A'+r+' '+r+' 0 '+((a1-a0)>Math.PI?1:0)+' 1 '+p1[0].toFixed(2)+' '+p1[1].toFixed(2)+' Z',fill:s.color,stroke:'#fff','stroke-width':'3','stroke-linejoin':'round'}));
+      a0=a1;
+    });
+  }
+  svg.appendChild(svgEl('circle',{cx:c,cy:c,r:50,fill:'#fff'}));
+  var t1=svgEl('text',{x:c,y:c+2,'text-anchor':'middle','class':'pie-big'});t1.textContent=centre[0];
+  var t2=svgEl('text',{x:c,y:c+22,'text-anchor':'middle','class':'pie-small'});t2.textContent=centre[1];
+  svg.appendChild(t1);svg.appendChild(t2);
+  var box=el('div','pie');
+  box.appendChild(svg);
+  var lg=el('ul','pie-legend');
+  slices.forEach(function(s){
+    var li=el('li');
+    var sw=el('i');sw.style.background=s.color;
+    li.appendChild(sw);
+    li.appendChild(el('span',null,s.label));
+    li.appendChild(el('b',null,s.text));
+    lg.appendChild(li);
+  });
+  box.appendChild(lg);
+  return box;
+}
+function section(title,intro){
+  var s=el('section','res-sec');
+  s.appendChild(el('h3',null,title));
+  if(intro){s.appendChild(el('p','res-intro',intro));}
+  return s;
+}
+function fmtDate(t){return new Date(t).toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'});}
+
+var HKEY='mgi-assessment-history-v1';
+function readHistory(){try{var h=JSON.parse(localStorage.getItem(HKEY)||'[]');return Array.isArray(h)?h:[];}catch(e){return [];}}
+function writeHistory(h){try{localStorage.setItem(HKEY,JSON.stringify(h.slice(-10)));}catch(e){}}
+
+function trendChart(hist){
+  var W=560,H=176,pl=40,pr=44,pt=24,pb=34;
+  var svg=svgEl('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':'Overall score for each attempt','class':'trend-svg'});
+  [0,50,100].forEach(function(v){
+    var y=pt+(H-pt-pb)*(1-v/100);
+    svg.appendChild(svgEl('line',{x1:pl,x2:W-pr,y1:y,y2:y,stroke:'#E0EBCF'}));
+    var t=svgEl('text',{x:pl-8,y:y+4,'text-anchor':'end','class':'tr-ax'});t.textContent=v+'%';svg.appendChild(t);
+  });
+  var pts=hist.map(function(h,i){return [hist.length===1?(pl+W-pr)/2:pl+(W-pl-pr)*i/(hist.length-1),pt+(H-pt-pb)*(1-h.pct/100),h];});
+  svg.appendChild(svgEl('polyline',{points:pts.map(function(p){return p[0]+','+p[1];}).join(' '),fill:'none',stroke:'#5FA304','stroke-width':'3','stroke-linejoin':'round','stroke-linecap':'round'}));
+  pts.forEach(function(p,i){
+    svg.appendChild(svgEl('circle',{cx:p[0],cy:p[1],r:i===pts.length-1?7:5,fill:i===pts.length-1?'#0B3B22':'#5FA304',stroke:'#fff','stroke-width':'2'}));
+    var v=svgEl('text',{x:p[0],y:p[1]-12,'text-anchor':'middle','class':'tr-val'});v.textContent=p[2].pct+'%';svg.appendChild(v);
+    var d=svgEl('text',{x:p[0],y:H-10,'text-anchor':'middle','class':'tr-ax'});d.textContent=new Date(p[2].t).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'2-digit'});svg.appendChild(d);
+  });
+  return svg;
+}
+
+function icsDownload(date){
+  function z(n){return (n<10?'0':'')+n;}
+  var d=date.getFullYear()+z(date.getMonth()+1)+z(date.getDate());
+  var n=new Date(date.getTime()+86400000);
+  var d2=n.getFullYear()+z(n.getMonth()+1)+z(n.getDate());
+  var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Mu Gamma Canada//Assessment//EN','BEGIN:VEVENT','UID:mgi-reassess-'+d+'@mugamma.ca','DTSTAMP:'+d+'T090000Z','DTSTART;VALUE=DATE:'+d,'DTEND;VALUE=DATE:'+d2,'SUMMARY:Retake the Mu Gamma sustainability self-assessment','DESCRIPTION:Retake the self-assessment at your website address to track your progress.','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
+  a.download='reassessment-reminder.ics';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
+
 function showResults(){
-  var r=scoreAnswers(answers,QUESTIONS,SCALE);
+  var r=scoreAnswers(answers,QUESTIONS);
   var bi=bandIndex(r.pct,BANDS),band=BANDS[bi];
+  var hist=readHistory(),prev=hist.length?hist[hist.length-1]:null;
+  var now={t:Date.now(),pct:r.pct,cats:{}};
+  r.cats.forEach(function(c){now.cats[c.name]=c.pct;});
+  hist.push(now);writeHistory(hist);
+
   var rv=$('resultView');
   rv.innerHTML='';
+  $('quizCard').classList.add('wide');
 
+  /* 1. Score summary */
   var top=el('div','res-top');
   var ring=el('div','ring');
   ring.setAttribute('role','img');
@@ -925,34 +1136,222 @@ function showResults(){
   num.appendChild(el('span',null,'overall'));
   ring.appendChild(num);
   top.appendChild(ring);
-
   var txt=el('div');
   txt.appendChild(el('span','band-chip band-'+Math.min(bi,3),'Your result'));
   var h=el('h2','res-title',band.label);
-  h.id='resTitle';
-  h.tabIndex=-1;
+  h.id='resTitle';h.tabIndex=-1;
   txt.appendChild(h);
   txt.appendChild(el('p','res-text',band.text));
-  txt.appendChild(el('p','res-date','Completed on '+new Date().toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'})));
+  var nx=el('p','res-next');
+  nx.appendChild(el('b',null,'Your next move: '));
+  nx.appendChild(document.createTextNode(band.next));
+  txt.appendChild(nx);
+  txt.appendChild(el('p','res-date','Completed on '+fmtDate(now.t)+'. '+r.got+' of '+r.max+' possible points.'));
   top.appendChild(txt);
   rv.appendChild(top);
 
-  if(r.cats.length>1){
-    var cats=el('div','cats');
-    cats.appendChild(el('h3',null,'Breakdown by section'));
-    r.cats.forEach(function(c){
-      var row=el('div','cat-row');
-      row.appendChild(el('span',null,c.name));
-      var tr=el('div','cat-track');
-      var f=el('div','cat-fill');
-      f.style.width=c.pct+'%';
-      tr.appendChild(f);
-      row.appendChild(tr);
-      row.appendChild(el('span','cat-val',c.pct+'%'));
-      cats.appendChild(row);
+  /* 2. Where you stand */
+  var s2=section('Where you stand','Your overall score places you on this scale. Each level reflects how mature your sustainability practices are today.');
+  var sc=el('div','scale');
+  var track=el('div','scale-track');
+  BANDS.forEach(function(b,i){
+    var nxt=BANDS[i+1]?BANDS[i+1].min:100;
+    var seg=el('div','scale-seg seg-'+i+(i===bi?' on':''));
+    seg.style.flexBasis=(nxt-b.min)+'%';
+    seg.appendChild(el('b',null,b.label));
+    seg.appendChild(el('span',null,b.min+(BANDS[i+1]?'–'+(nxt-1):'–100')+'%'));
+    track.appendChild(seg);
+  });
+  sc.appendChild(track);
+  var mk=el('div','scale-marker');
+  mk.style.left=Math.min(99,Math.max(1,r.pct))+'%';
+  mk.appendChild(el('span',null,'You: '+r.pct+'%'));
+  sc.appendChild(mk);
+  s2.appendChild(sc);
+  rv.appendChild(s2);
+
+  /* 3. Charts */
+  var s3=section('Your results at a glance','Two views of the same assessment: how you answered, and where your points came from.');
+  var grid=el('div','pie-grid');
+  var c=r.counts,answered=c.yes+c.partly+c.no;
+  var p1=el('div','chart-card');
+  p1.appendChild(el('h4',null,'How you answered'));
+  p1.appendChild(pieChart([
+    {label:'Yes',value:c.yes,color:'#3F7D0C',text:c.yes+' ('+(QUESTIONS.length?Math.round(c.yes/QUESTIONS.length*100):0)+'%)'},
+    {label:'Partly or in progress',value:c.partly,color:'#F2A93B',text:c.partly+' ('+Math.round(c.partly/QUESTIONS.length*100)+'%)'},
+    {label:'No',value:c.no,color:'#D1553B',text:c.no+' ('+Math.round(c.no/QUESTIONS.length*100)+'%)'},
+    {label:'Not applicable',value:c.na,color:'#B7C4BA',text:c.na+' ('+Math.round(c.na/QUESTIONS.length*100)+'%)'}
+  ],'Pie chart of your answers: '+c.yes+' yes, '+c.partly+' partly, '+c.no+' no, '+c.na+' not applicable',[String(QUESTIONS.length),'questions']));
+  grid.appendChild(p1);
+  var palette=['#0B3B22','#5FA304','#0E7C86','#F2A93B'];
+  var p2=el('div','chart-card');
+  p2.appendChild(el('h4',null,'Where your points come from'));
+  p2.appendChild(pieChart(r.cats.map(function(k,i){
+    return {label:k.name,value:k.got,color:palette[i%palette.length],text:k.got+' pts'};
+  }),'Pie chart of points earned by section',[String(r.got),'points']));
+  grid.appendChild(p2);
+  s3.appendChild(grid);
+
+  var cats=el('div','cats');
+  cats.appendChild(el('h4',null,'Score by section'));
+  r.cats.forEach(function(k){
+    var st=status(k.pct);
+    var row=el('div','cat-row');
+    row.appendChild(el('span',null,k.name));
+    var tr=el('div','cat-track');
+    var f=el('div','cat-fill fill-'+st.k);
+    f.style.width=k.pct+'%';
+    tr.appendChild(f);
+    row.appendChild(tr);
+    row.appendChild(el('span','cat-val',k.pct+'%'));
+    row.appendChild(el('span','chip chip-'+st.k,st.t));
+    cats.appendChild(row);
+  });
+  s3.appendChild(cats);
+  rv.appendChild(s3);
+
+  /* 4. Understand your score */
+  var s4=section('Understand your score','Each answer earns points. Yes earns 2, Partly or in progress earns 1, and No earns 0. Questions marked Not applicable are left out, so they never count against you. Your score is the points you earned divided by the points possible.');
+  var bg=el('div','band-grid');
+  BANDS.forEach(function(b,i){
+    var cd=el('div','band-card'+(i===bi?' on':''));
+    cd.appendChild(el('span','band-chip band-'+i,b.min+(BANDS[i+1]?'–'+(BANDS[i+1].min-1):'–100')+'%'));
+    cd.appendChild(el('h4',null,b.label));
+    cd.appendChild(el('p',null,b.next));
+    if(i===bi){cd.appendChild(el('em',null,'You are here'));}
+    bg.appendChild(cd);
+  });
+  s4.appendChild(bg);
+  rv.appendChild(s4);
+
+  /* 5. Analysis */
+  var s5=section('Analysis: strengths and priorities');
+  var sorted=r.cats.slice().sort(function(a,b){return b.pct-a.pct;});
+  var best=sorted[0],worst=sorted[sorted.length-1];
+  var sum=el('div','insights');
+  var i1=el('div','insight good');
+  i1.appendChild(el('h4',null,'Strongest area'));
+  i1.appendChild(el('p',null,best.name+' at '+best.pct+'%. Keep documenting what works here so it can be repeated across the business.'));
+  sum.appendChild(i1);
+  var i2=el('div','insight warn');
+  i2.appendChild(el('h4',null,'Biggest opportunity'));
+  i2.appendChild(el('p',null,(r.cats.length>1?worst.name+' at '+worst.pct+'%. ':'')+'Improving this area will lift your overall score the most.'));
+  sum.appendChild(i2);
+  s5.appendChild(sum);
+
+  var gaps=[];
+  QUESTIONS.forEach(function(q,i){var v=answers[i];if(v===0||v===1||v==null){gaps.push({q:q,v:v==null?0:v,i:i});}});
+  gaps.sort(function(a,b){return a.v-b.v||a.i-b.i;});
+  if(gaps.length){
+    s5.appendChild(el('h4','sub','Priority actions ('+gaps.length+')'));
+    var list=el('ol','gaps');
+    gaps.slice(0,8).forEach(function(g){
+      var li=el('li','gap');
+      var hd=el('div','gap-head');
+      hd.appendChild(el('span','chip '+(g.v===0?'chip-low':'chip-mid'),g.v===0?'Not yet':'In progress'));
+      hd.appendChild(el('span','gap-cat',g.q.cat));
+      li.appendChild(hd);
+      li.appendChild(el('p','gap-q',g.q.text));
+      li.appendChild(el('p','gap-tip','Action: '+g.q.tip));
+      var lg=el('div','gap-sdg');
+      g.q.sdg.forEach(function(n){lg.appendChild(sdgImg(n,34,'sdg-mini'));});
+      li.appendChild(lg);
+      list.appendChild(li);
     });
-    rv.appendChild(cats);
+    s5.appendChild(list);
+    if(gaps.length>8){s5.appendChild(el('p','res-intro','Showing the first 8 of '+gaps.length+' actions. Book a meeting and we will help you plan the rest.'));}
+  }else{
+    s5.appendChild(el('p','res-intro','Every applicable question was answered Yes. Focus now on verifying your data, reporting your progress and setting more ambitious targets.'));
   }
+  rv.appendChild(s5);
+
+  /* 6. SDGs */
+  var s6=section('Your alignment with the UN Sustainable Development Goals','Each answer supports one or more of the 17 Sustainable Development Goals. The goals below show where your practices already contribute, and how to improve toward the next goals.');
+  var groups=[
+    {t:'Where you already contribute',f:function(p){return p>=67;},cls:'strong'},
+    {t:'Building momentum',f:function(p){return p>=34&&p<67;},cls:'mid'},
+    {t:'Biggest opportunity',f:function(p){return p<34;},cls:'low'}
+  ];
+  groups.forEach(function(gp){
+    var items=r.sdg.filter(function(s){return gp.f(s.pct);});
+    if(!items.length){return;}
+    s6.appendChild(el('h4','sub sub-'+gp.cls,gp.t));
+    var cg=el('div','sdg-grid');
+    items.forEach(function(s){
+      var info=SDG_INFO[s.n]||{n:sdgName(s.n),next:'',up:[]};
+      var cd=el('article','sdg-card');
+      cd.appendChild(sdgImg(s.n,92,'sdg-big'));
+      var bd=el('div','sdg-body');
+      bd.appendChild(el('h5',null,'SDG '+s.n+': '+info.n));
+      var tr=el('div','cat-track');
+      var f=el('div','cat-fill fill-'+gp.cls);f.style.width=s.pct+'%';tr.appendChild(f);
+      var pr=el('div','sdg-prog');pr.appendChild(tr);pr.appendChild(el('b',null,s.pct+'%'));
+      bd.appendChild(pr);
+      bd.appendChild(el('p',null,(s.pct>=67?'Keep it up: ':'To improve: ')+info.next));
+      if(info.up&&info.up.length){
+        var up=el('div','sdg-up');
+        up.appendChild(el('span',null,'Doing well here also helps you progress toward'));
+        var ic=el('div','sdg-up-icons');
+        info.up.forEach(function(n){ic.appendChild(sdgImg(n,34,'sdg-mini'));});
+        up.appendChild(ic);
+        bd.appendChild(up);
+      }
+      cd.appendChild(bd);
+      cg.appendChild(cd);
+    });
+    s6.appendChild(cg);
+  });
+  s6.appendChild(el('p','fine','The SDG icons are the official United Nations Sustainable Development Goals icons. The United Nations has not approved or endorsed this assessment.'));
+  rv.appendChild(s6);
+
+  /* 7. Reassessment */
+  var s7=section('Reassessment: track your progress','Sustainability is a journey. Retake the assessment every six months to measure improvement and update your priorities. Results are saved only in this browser.');
+  if(prev){
+    var d=r.pct-prev.pct;
+    var cmp=el('div','cmp');
+    var big=el('div','cmp-big');
+    big.appendChild(el('span',null,'Previous ('+fmtDate(prev.t)+')'));
+    big.appendChild(el('b',null,prev.pct+'%'));
+    big.appendChild(el('i',null,'→'));
+    big.appendChild(el('span',null,'Now'));
+    big.appendChild(el('b',null,r.pct+'%'));
+    big.appendChild(el('em','delta '+(d>0?'up':(d<0?'down':'flat')),(d>0?'+':'')+d+' points'));
+    cmp.appendChild(big);
+    var tb=el('div','cmp-rows');
+    r.cats.forEach(function(k){
+      var pv=prev.cats&&prev.cats[k.name];
+      var row=el('div','cmp-row');
+      row.appendChild(el('span',null,k.name));
+      row.appendChild(el('span','muted',pv==null?'–':pv+'%'));
+      row.appendChild(el('b',null,k.pct+'%'));
+      var dd=pv==null?null:k.pct-pv;
+      row.appendChild(el('em','delta '+(dd>0?'up':(dd<0?'down':'flat')),dd==null?'new':((dd>0?'+':'')+dd)));
+      tb.appendChild(row);
+    });
+    cmp.appendChild(tb);
+    s7.appendChild(cmp);
+  }else{
+    s7.appendChild(el('p','baseline','This result is now saved as your baseline. When you retake the assessment, you will see a side-by-side comparison here.'));
+  }
+  if(hist.length>1){
+    var tc=el('div','chart-card');
+    tc.appendChild(el('h4',null,'Your score over time'));
+    tc.appendChild(trendChart(hist));
+    s7.appendChild(tc);
+  }
+  var due=new Date(now.t);due.setMonth(due.getMonth()+6);
+  s7.appendChild(el('p','res-intro','Recommended date to reassess: '+fmtDate(due.getTime())+'.'));
+  var ra=el('div','res-actions inline');
+  var rem=el('button','btn btn-primary','Add a reassessment reminder');
+  rem.type='button';
+  rem.addEventListener('click',function(){icsDownload(due);});
+  ra.appendChild(rem);
+  var clr=el('button','btn btn-ghost','Clear saved history');
+  clr.type='button';
+  clr.addEventListener('click',function(){try{localStorage.removeItem(HKEY);}catch(e){}clr.textContent='History cleared';clr.disabled=true;});
+  ra.appendChild(clr);
+  s7.appendChild(ra);
+  rv.appendChild(s7);
 
   var act=el('div','res-actions');
   var book=el('a','btn btn-primary','Book a meeting to discuss your results');
@@ -967,6 +1366,7 @@ function showResults(){
   re.addEventListener('click',function(){
     answers=[];idx=0;clearSaved();
     rv.hidden=true;
+    $('quizCard').classList.remove('wide');
     $('quizView').hidden=false;
     renderQ(true);
     $('start').scrollIntoView({behavior:'smooth',block:'start'});
