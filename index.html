@@ -1086,6 +1086,13 @@ a.project:not([href]) .project-cta{display:none}
 a.project[href]:hover .project-cta{text-decoration:underline}
 @media (max-width:1180px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media (max-width:620px){.project-grid{grid-template-columns:minmax(0,1fr)!important}}
+
+/* Partner logos: crisp, undistorted, uniform tiles */
+.logo-tile{height:120px!important;padding:0 28px!important;min-width:150px}
+.logo-tile img{width:calc(var(--w) * 1px)!important;height:auto!important;max-width:none!important;max-height:84px;object-fit:contain;image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.logo-tile.is-blue{background:#0096FF!important;border-color:#0096FF!important;padding:0 6px!important}
+.marquee-track{will-change:transform;backface-visibility:hidden}
+@media (max-width:640px){.logo-tile{height:92px!important;padding:0 18px!important}.logo-tile img{width:calc(var(--w) * .7px)!important;max-height:62px}}
 </style>
 </head>
 <body>
@@ -1606,12 +1613,14 @@ a.project[href]:hover .project-cta{text-decoration:underline}
     <div class="partners-label"><span class="eyebrow">Our partners</span></div>
     <div class="marquee">
       <ul class="marquee-track" id="marqueeTrack">
-        <li><span class="logo-tile"><img src="logos/partner-borda.png" alt="BORDA" style="--h:70"></span></li>
-        <li><span class="logo-tile"><img src="logos/partner-giz.png" alt="GIZ Deutsche Gesellschaft für Internationale Zusammenarbeit" style="--h:64"></span></li>
-        <li><span class="logo-tile"><img src="logos/partner-norwegian-embassy.png" alt="Norwegian Embassy" style="--h:98"></span></li>
-        <li><span class="logo-tile"><img src="logos/partner-research-council-norway.png" alt="The Research Council of Norway" style="--h:54"></span></li>
-        <li><span class="logo-tile"><img src="logos/partner-unicef.png" alt="UNICEF" style="--h:84"></span></li>
-        <li><span class="logo-tile"><img src="logos/partner-project-green.png" alt="Partners in Project Green" style="--h:96"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-borda.png" alt="BORDA" style="--w:226" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-giz.png" alt="GIZ Deutsche Gesellschaft für Internationale Zusammenarbeit" style="--w:262" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-norwegian-embassy.png" alt="Norwegian Embassy" style="--w:178" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-research-council-norway.png" alt="The Research Council of Norway" style="--w:264" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile is-blue"><img src="logos/partner-unicef.png" alt="UNICEF" style="--w:212" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-teri.png" alt="TERI, The Energy and Resources Institute" style="--w:276" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-world-bank.png" alt="World Bank Group" style="--w:276" loading="eager" decoding="async"></span></li>
+        <li><span class="logo-tile"><img src="logos/partner-project-green.png" alt="Partners in Project Green" style="--w:200" loading="eager" decoding="async"></span></li>
       </ul>
     </div>
   </section>
