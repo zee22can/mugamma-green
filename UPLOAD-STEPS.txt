@@ -1,10 +1,7 @@
 MU GAMMA CANADA WEBSITE: UPLOAD STEPS
 
 Everything below must sit at the TOP level of your GitHub repository:
-  index.html        home page
-  assessment.html   self-assessment page
-  logos/            partner logos and company logo
-  sdg/              the 17 UN Sustainable Development Goals icons
+  index.html, assessment.html, logos/ (folder), sdg/ (folder)
 
 1. Unzip this package on your computer.
 2. Open your repository on github.com, click Add file, then Upload files.

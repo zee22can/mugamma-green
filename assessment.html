@@ -841,6 +841,13 @@ footer a{color:#2F7A0C!important}
 }
 @media (max-width:1239px){.nav .wrap{justify-content:space-between}.brand{order:0}}
 .menu>a{white-space:nowrap}
+
+/* Header layout: logo top left, menu below it */
+@media (min-width:1240px){
+  .nav .wrap{flex-wrap:wrap!important;gap:10px 32px!important;justify-content:flex-start!important}
+  .brand{order:0!important;margin-left:0!important;flex:0 0 100%}
+  .menu{order:1!important;font-size:16px!important;gap:6px 30px!important}
+}
 </style>
 </head>
 <body>
