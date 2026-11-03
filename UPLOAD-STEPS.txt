@@ -1,24 +1,16 @@
 MU GAMMA CANADA WEBSITE: UPLOAD STEPS
 
-Files in this folder (everything must sit at the TOP level of your GitHub repository):
+Everything below must sit at the TOP level of your GitHub repository:
   index.html        home page
   assessment.html   self-assessment page
-  logos/            company and partner logos
-  sdg/              the 17 UN Sustainable Development Goals icons (used in assessment results)
+  logos/            partner logos and company logo
+  sdg/              the 17 UN Sustainable Development Goals icons
 
-Steps
 1. Unzip this package on your computer.
-2. Open your repository on github.com and click Add file, then Upload files.
-3. Open the unzipped mugamma-website folder, select ALL items inside it
-   (index.html, assessment.html, the logos folder and the sdg folder) and drag them into the GitHub page.
+2. Open your repository on github.com, click Add file, then Upload files.
+3. Open the unzipped mugamma-website folder, select ALL items inside it and drag them into the GitHub page.
    Do not drag the mugamma-website folder itself.
-4. Scroll down and click Commit changes.
-5. Wait for the green tick under the Actions tab, then open your site and press Ctrl+F5.
+4. Click Commit changes.
+5. Wait for the green tick under Actions, then open your site and press Ctrl+F5.
 
-Old file to delete from the repository (no longer used): team.html, index-light.html
-
-Things you can edit later
-  - E-learning "Try now" button: in index.html search for "E-LEARNING LINK".
-  - Project cards: search for "OUR PROJECTS".
-  - LinkedIn buttons: search for linkedin.com and replace with each person's profile address.
-  - Job applications: search for "CAREERS=" and put a form service address in "endpoint".
+Delete from the repository if present: team.html, index-light.html
